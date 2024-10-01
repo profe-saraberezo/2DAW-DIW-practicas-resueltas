@@ -1,4 +1,5 @@
-A partir del código HTML y CSS que se muestra, añadir los selectores CSS que faltan para aplicar los estilos deseados. Cada regla CSS incluye un comentario en el que se explica los elementos a los que debe aplicarse:
+A partir del código HTML y CSS que se muestra, añadir los selectores CSS que faltan para aplicar los estilos
+deseados. Cada regla CSS incluye un comentario en el que se explica los elementos a los que debe aplicarse:
 
 /* Todos los elementos de la pagina */
 { font: 1em/1.3 Arial, Helvetica, sans-serif; }
