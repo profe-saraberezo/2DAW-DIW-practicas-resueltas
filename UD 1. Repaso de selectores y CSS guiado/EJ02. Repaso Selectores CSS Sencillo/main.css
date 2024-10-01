@@ -6,3 +6,11 @@ p strong {
     color: red;
 }
 
+span.destacado{
+    color:orange;
+}
+
+h2#subtitulo {
+    color: blue;
+}
+
