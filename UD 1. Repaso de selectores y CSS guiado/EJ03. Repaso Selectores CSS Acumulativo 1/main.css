@@ -60,7 +60,7 @@ img { border: none; }
 #lateral #noticias,
 #lateral #publicidad,
 #contenido #principal,
-#contenido #secundario, {
+#contenido #secundario {
     padding: .5em;
 }
  

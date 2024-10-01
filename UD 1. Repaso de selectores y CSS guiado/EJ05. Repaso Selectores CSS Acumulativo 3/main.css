@@ -55,6 +55,10 @@ img { border: none; }
 
 /* === EJERCICIOS 1-2-3 =================================================== */
 
+*{
+    box-sizing: border-box;
+}
+
 #menu,
 #lateral,
 #lateral #noticias,
