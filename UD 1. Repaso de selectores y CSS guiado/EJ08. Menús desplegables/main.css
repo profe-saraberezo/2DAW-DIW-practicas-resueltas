@@ -4,8 +4,23 @@
   box-sizing: border-box;
 }
 
-.menu {
+.logo {
   display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 200px;
+  height: 60px;
+  overflow: hidden; /* Oculta los elementos que se salgan del contenedor*/
+  margin: 20px 0 0 50px;
+}
+
+.logo img {
+  width: 100%; /* La imagen ocupará el 100% del ancho del enlace */
+  height: auto;  
+}
+
+.menu {
+  display:inline-flex;
   justify-content: center;
   align-items: center;
   width: 95%;
@@ -25,25 +40,24 @@ ol {
 }
 
 .menu-item {
-  background: #444;
+  background: #606c38;
   padding: 1em 0.5em;
   position: relative;
-  border-bottom: 5px solid #999;
-  margin: 0 0.1em;
-
+  border-bottom: 5px solid #dda15e;
+  margin: 1em 0.25em;
   cursor: pointer;
   min-width: 8em;
   text-align: center;
 }
 
 .menu-item[aria-haspopup=true] {
-  border-bottom-color: #fc9b1b;
+  border-bottom-color: #283618;
 }
 
 .menu-item:hover,
 .menu-item:focus-within {
-  border-bottom-color: #91d36b;
-  background: #333;
+  border-bottom-color: #bc6c25;
+  background: #283618;
 }
 
 .menu-item:hover .sub-menu,
@@ -75,7 +89,7 @@ ol {
 }
 
 a {
-  color: #fff;
+  color: #fefae0;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -102,18 +116,22 @@ body {
   margin: 0;
 }
 
+.mainmenu {
+  margin: 50px 0 0 20px;
+}
+
 /* make ALL links (main and submenu) have padding and background color */
 .mainmenu a {
   display: block;
-  background-color: #CCC;
+  background-color: #1d3557;
   text-decoration: none;
   padding: 10px;
-  color: #000;
+  color: #f1faee;
 }
 
 /* add hover behaviour */
 .mainmenu a:hover {
-  background-color: #C5C5C5;
+  background-color: #457b9d;
 }
 
 
@@ -133,12 +151,14 @@ body {
 */
 
 .submenu a {
-  background-color: #999;
+  background-color: #f1faee;
+  color: #1d3557;
 }
 
 /* hover behaviour for links inside .submenu */
 .submenu a:hover {
-  background-color: #666;
+  background-color: #d24753;
+  opacity: 0.75;
 }
 
 /* this is the initial state of all submenus.
@@ -148,4 +168,5 @@ body {
   overflow: hidden;
   max-height: 0;
   -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
