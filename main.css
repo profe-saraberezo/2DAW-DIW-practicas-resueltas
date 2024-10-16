@@ -3,7 +3,8 @@ body{
 }
 
 .btn {
-  background-color: #199319;
+  margin-top: 20px;
+  background-color: #283618;
   border-radius: 10px;
   color: white;
   padding: 10px 20px;
@@ -11,5 +12,5 @@ body{
 }
 
 .btn:hover {
-  background-color: #223094;
+  background-color: #606c38;
 }
