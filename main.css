@@ -1,13 +1,5 @@
-body {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-}
-
 .btn {
+  justify-content: center;
   background-color: #199319;
   border-radius: 10px;
   color: white;
