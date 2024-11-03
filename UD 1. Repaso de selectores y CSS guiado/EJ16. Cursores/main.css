@@ -74,7 +74,7 @@
   }
   .caja16{
     background-color: #17A589;
-    cursor: progress;
+    cursor: no-drop;
   }
   .caja17{
     background-color: #F1C40F;
@@ -92,18 +92,7 @@
     background-color: #2C3E50;
     cursor: nwse-resize;
   }
-  .caja21{
-    background-color: grey;
-    cursor: nesw-resize;
-  }
-  .caja21{
-    background-color: black;
-    cursor: nesw-resize;
-  }
-  .caja26{
-    background-color: #C0392B;
-    cursor: url(https://cdn-icons-png.flaticon.com/128/2662/2662839.png), pointer;
-  }
+
   .caja21{
     background-color: #9B59B6;
     cursor: nesw-resize;
@@ -128,3 +117,6 @@
     background-color: #95A5A6;
     cursor: url(https://cdn-icons-png.flaticon.com/128/2662/2662839.png), pointer;
   }
+  /* Para cursores personalizados:
+  Asegúrate de que el archivo de imagen sea pequeño (idealmente menor a 1 KB), para que se cargue rápido.
+  No todos los navegadores soportan imágenes grandes como cursores, así que es mejor mantenerlas de 32x32 píxeles o menos.*/
