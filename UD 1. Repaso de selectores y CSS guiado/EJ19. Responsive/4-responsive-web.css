@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  nav {
+    background-color: #a99f4e;
+    color: #fff;
+    padding: 10px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  nav a{
+    color:white;
+  }
+  main {
+    padding: 20px;
+    float: left;
+    width: 80%;
+    /* overflow:auto; */
+  }
+  section {
+    display:block;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+  aside {
+    padding: 20px;
+    float: left;
+    width: 20%;
+    height: auto;
+    background-color: #eee;
+    overflow: auto;
+  }
+  footer {
+    clear:both;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    overflow: hidden;
+  }
+  footer div {
+    float: left;
+    padding: 20px;
+    width: 25%;
+  }
+  @media (max-width: 1000px) {
+    main {
+      width: 100%;
+      float: none; /* Eliminamos float para que ocupe todo el ancho */
+    }
+    aside {
+      width: 100%;
+      float: none; /* Eliminamos float para que ocupe todo el ancho */
+    }
+    footer div {
+      width: 50%;
+      float: left;
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 600px) {
+    
+    nav {
+        position: sticky;
+        width: 100%;
+        top: 0;
+    }
+    nav ul {
+      display: block;
+    }
+    nav li {
+      display: block;
+      margin-right: 0;
+    }
+    nav a {
+      display: block;
+      margin-bottom: 10px;
+    }
+    main, section, aside, footer div{
+      width: 100%;
+      float: none;
+    }
+  }
