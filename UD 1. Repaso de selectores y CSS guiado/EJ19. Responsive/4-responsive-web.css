@@ -67,7 +67,7 @@ body {
     padding-left: 0;
   }
   aside ul li::before{
-    content: '😂';
+    content: '😂😂';
     margin-right: 5px;
   }
   footer {
