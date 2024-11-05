@@ -16,7 +16,7 @@ p:after {
         background-color: green; 
     }
     p:after {
-       color: white;
+       /* color: white; */
        content:"Tablet";
     }
 }
@@ -27,7 +27,7 @@ p:after {
         background-color: blue;
     }
     p:after {
-       color: white;
+       /* color: white; */
        content:"Escritorio";
     }
 }
