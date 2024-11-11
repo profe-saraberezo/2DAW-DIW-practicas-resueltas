@@ -61,7 +61,7 @@ body {
     width: 20%;
     height: auto;
     background-color: #eee;
-    overflow: auto;
+    /* overflow: auto; */
   }
   aside ul{
     list-style: none inside;
@@ -77,7 +77,7 @@ body {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   footer div {
     float: left;
