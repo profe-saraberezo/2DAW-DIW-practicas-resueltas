@@ -7,10 +7,23 @@
 </head>
 <body>
 
-    <style>*{margin-top: 5px;}</style>
+    <style>
+        *{margin: 10px;}
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+        }
+    </style>
 
     <img src="examen.png" width="100%"/>
 
+    <h1>ENUNCIADO</h1>
     <ul>
         <li>La paleta de colores elegida es:
             <ul>
@@ -103,6 +116,31 @@
             </ul>
         </li>
     </ul>
+
+    <h1>EVALUACIÓN</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Puntuación</th>
+                <th>✔️ / ❌</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td colspan="3"><strong>Header</strong></td>
+            <tr><td>Nav</td><td>1 puntos</td><td>✔️ / ❌</td></tr>
+            <tr><td>Apariencia header final</td><td>2 puntos</td><td>✔️ / ❌</td></tr>
+            <tr><td colspan="3"><strong>Main</strong></td>
+            <tr><td><em>Apartado .presentación</em></td><td>1 punto</td><td>✔️ / ❌</td></tr>
+            <tr><td colspan="3"><em>Apartado .bares</em></td>
+            <tr><td>Estilos aplicados</td><td>1 punto</td><td>✔️ / ❌</td></tr>
+            <tr><td>Disposición</td><td>1,5 puntos</td><td>✔️ / ❌</td></tr>
+            <tr><td>Lista</td><td>0,5 puntos</td><td>✔️ / ❌</td></tr>
+            <tr><td>Estrellas</td><td>1,5 puntos</td><td>✔️ / ❌</td></tr>
+            <tr><td><strong>Footer</strong></td><td>1,5 puntos</td><td>✔️ / ❌</td></tr>
+            <tr><td><strong>TOTAL</strong></td><td><strong>10 puntos</strong></td><td></td></tr>
+        </tbody>
+    </table>
     
 </body>
 </html>
