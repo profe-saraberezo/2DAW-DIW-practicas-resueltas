@@ -76,6 +76,36 @@ section{
     margin-right: 3%;
     float: left;
 }
+
+.presentacion div article {
+    margin-bottom: 1%;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.presentacion div article:nth-child(odd) {
+    background-color: var(--gris-claro);
+}
+.presentacion div article:nth-child(even) {
+    background-color: var(--gris-medio);
+}
+.presentacion div article ul {
+    list-style: none;
+}
+.presentacion div article ul li {
+    margin-left: 2%;
+}
+
+.presentacion div article ul li::before {
+    content: ""; /* Dejamos el contenido en blanco */
+    display: inline-block;
+    width: 20px; /* Ancho de la imagen de la viñeta */
+    height: 20px; /* Alto de la imagen de la viñeta */
+    background-image: url('imgs/ico-list.png'); /* Ruta de la imagen de la viñeta */
+    background-size: contain; /* Ajustar la imagen al contenedor */
+    /* Espacio entre la viñeta y el texto del elemento */
+}
+
 .presentacion p {
     line-height: 1.5;
 }
@@ -167,8 +197,8 @@ section{
 }
 
 footer {
-    /*width: 100%;
-    display: flex;
+    width: 100%;
+    /*display: flex;
     justify-content: space-between;
     align-items: center;*/
     background-color: var(--gris-oscuro);
