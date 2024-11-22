@@ -26,7 +26,7 @@
                     <track src="media/subtitulos.vtt" kind="captions" srclang="es" label="Español">
                     <p>Tu navegador no soporta el elemento de video.</p>
                 </video>
-                <button id="soundButton">🔈</button>
+                <button id="playButton">⏸️</button>
             </div>
                 <p>TCP/IP (Transmission Control Protocol/Internet Protocol) es el conjunto de reglas que permite que los dispositivos se comuniquen a través de internet. Funciona dividiendo los datos en pequeños paquetes, que se envían a través de redes y se reagrupan en su destino. TCP se encarga de asegurar que los paquetes lleguen correctamente y en el orden adecuado, mientras que IP se encarga de direccionar y enviar estos paquetes a su destino a través de las redes.</p>
             </article>
@@ -38,9 +38,11 @@
 
             <article>
                 <h2>¿Cómo funciona internet?</h2>
-                <iframe id="videoYT" src="https://www.youtube.com/embed/rw41W8crZ_Y?si=DJIy41V3puYqyuW_"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <button>▶️</button>
+                <button id="soundButton">🔈</button>
+                <div id="videoYT">
+                    <iframe src="https://www.youtube.com/embed/rw41W8crZ_Y?si=DJIy41V3puYqyuW_&autoplay=1&mute=1"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </article>
 
             <article>
@@ -86,33 +88,50 @@
     <footer>
         <p> Sara Berezo Loza </p>
     </footer>
-    
+
+
+    <script src="https://www.youtube.com/iframe_api"></script> <!-- API youtube -->
     <script>
+        
+        let player; // Variable para guardar el reproductor
         // Seleccionamos el video y el botón
         const video = document.getElementById("video");
         const soundButton = document.getElementById("soundButton");
+        const playButton = document.getElementById("playButton");
         const videoYT = document.getElementById("videoYT");
 
         // Función para alternar play/pause
-        videoYT.addEventListener("click", () => {
+        playButton.addEventListener("click", () => {
             if (video.paused) {
                 video.play();
-                btn.innerHTML = "Pause";
+                playButton.innerHTML = "⏸️";
             } else {
                 video.pause();
-                btn.innerHTML = "Play";
+                playButton.innerHTML = "▶️";
             }
         });
     
+        // Función que se ejecuta cuando la API de YouTube está lista
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('videoYT', {
+                videoId: 'rw41W8crZ_Y', // ID del video de YouTube
+                playerVars: {
+                    autoplay: 1,  // El video se reproducirá automáticamente
+                    mute: 1,       // El video se reproduce en modo mudo
+                    loop: 1,       // Reproduce el video en bucle
+                }
+            });
+        }
+
         // Función para alternar el sonido
         soundButton.addEventListener("click", () => {
-          if (video.muted) {
-            video.muted = false;
-            soundButton.textContent = "🔊"; // Cambia el ícono a "sonido activado"
-          } else {
-            video.muted = true;
-            soundButton.textContent = "🔈"; // Cambia el ícono a "sonido apagado"
-          }
+            if (player.isMuted()) {
+                player.unMute(); // Si está muteado, desmutea el video
+                soundButton.textContent = "🔊"; // Cambia el ícono a sonido activado
+            } else {
+                player.mute(); // Si está desmuteado, mútelo
+                soundButton.textContent = "🔈"; // Cambia el ícono a sonido desactivado
+            }
         });
       </script>
 

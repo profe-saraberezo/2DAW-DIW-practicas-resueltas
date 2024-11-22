@@ -48,7 +48,6 @@ article {
 }
 
 article div {
-    position: relative;
     margin-bottom: 2vh;
 }
 
@@ -71,11 +70,22 @@ video, iframe {
 }
 
 #soundButton{
-    position: absolute;
     width: auto;
     height: auto;
-    bottom: 10px;
-    right: 10px;
+    background-color: rgba(var(--naranja-brillante-rgb), 0.7);
+    border: none;
+    border-radius: 30%;
+    padding: 0.5vw;
+    cursor: pointer;
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#playButton {
+    width: auto;
+    height: auto;
     background-color: rgba(var(--naranja-brillante-rgb), 0.7);
     border: none;
     border-radius: 30%;
