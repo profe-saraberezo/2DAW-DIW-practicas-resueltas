@@ -26,6 +26,13 @@
     background-size: 100% 100%;
   }
 
+  
+  .anverso{
+    position: absolute;
+    z-index: 1;
+    transition: all 1s ease 200ms;
+  }
+
 
   .ficha {
     margin: 5vh 0 0 5vw;
@@ -39,11 +46,6 @@
     border-radius: 10px;
   }
 
-  .anverso{
-    position: absolute;
-    z-index: 1;
-    transition: all 1s ease 200ms;
-  }
   .reverso{
     position: absolute;
     z-index: 0;
