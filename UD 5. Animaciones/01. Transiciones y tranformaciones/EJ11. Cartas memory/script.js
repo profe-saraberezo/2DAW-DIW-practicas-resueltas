@@ -1,10 +1,13 @@
 var carta = null;
 
 function girarCarta(cartaGirada) {
-    if (!cartaGirada.classList.contains('girada')) {
-        cartaGirada.classList.add('girada');
+    // if (!cartaGirada.classList.contains('girada')) {
+    //     cartaGirada.classList.add('girada');
+    //     setTimeout(compararCarta, 1000, cartaGirada);
+    // }
+        cartaGirada.classList.toggle('girada');
         setTimeout(compararCarta, 1000, cartaGirada);
-    }
+
 }
 
 function compararCarta(cartaDos) {
