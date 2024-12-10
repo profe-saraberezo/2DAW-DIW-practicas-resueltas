@@ -4,6 +4,8 @@ var objetosAleatorios;
 // Elementos HTML
 var tapar = document.getElementById("telon");
 var btn = document.getElementById("btn");
+var audio_acierto = document.getElementById("audio_acierto");
+var audio_error = document.getElementById("audio_error");
 var search = document.querySelector(".search");
 var acierto = document.querySelector(".aciertos");
 var error = document.querySelector(".errores");
@@ -54,12 +56,14 @@ function intento(objeto){
     const name = objeto.getAttribute("name");
 
     if (name == buscado) {
+        audio_acierto.play();
         acierto_cont++;
         acierto.innerHTML = acierto_cont;
         objeto.classList.add('acierto');
         nuevoObjeto();
     }
     else {
+        audio_error.play();
         erorr_cont++;
         error.innerHTML = erorr_cont;
     }

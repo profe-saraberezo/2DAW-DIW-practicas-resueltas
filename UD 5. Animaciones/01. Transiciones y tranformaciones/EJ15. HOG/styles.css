@@ -94,6 +94,10 @@ main > * {
     z-index: 1;
 }
 
+audio {
+    visibility: hidden;
+}
+
 #telon {
     top: 0;
     left: 0;
@@ -175,10 +179,11 @@ main > * {
 }
 
 main > * {
-    transition: transform 1s, opacity 0.5s ease 1s;
+    transition: transform 1s, opacity 0.5s ease 1s, z-index 1s ease 1.5s;
 }
 
 .acierto {
     transform: scale(1.5) !important;
     opacity: 0;
+    z-index: -1;
 }
