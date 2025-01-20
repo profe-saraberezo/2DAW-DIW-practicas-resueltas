@@ -20,3 +20,4 @@ Se aplican estilos al diseño y la apariencia de las secciones y sus elementos r
     Se aplican transiciones para lograr animaciones suaves al expandir y cerrar las secciones.
     El fondo y la apariencia de cada sección se configuran con colores y estilos.
     Los estilos generales se aplican al cuerpo, la fuente y otros elementos.
+    
