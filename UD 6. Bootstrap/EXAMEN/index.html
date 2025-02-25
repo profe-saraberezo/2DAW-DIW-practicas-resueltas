@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon.png">
+    <link href="styles.css" rel="stylesheet">
+    <title>Web de Citas</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <!-- Header a la izquierda -->
+      <a class="navbar-brand" href="#">Celebra San Valentín</a>
+      <!-- Botón para colapsar en móvil -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Items de navegación -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Main -->
+    <div class="container py-4">
+
+        <div class="row principal">
+
+            <main class="col-12 col-lg-10 main pe-4 order-2 order-md-1">
+
+                <section class="titulo row">
+                    <div class="col-12">
+                        <h1 class="display-2 border-bottom border-danger text-danger d-none d-md-block">Encuentra el amor</h1>
+                    </div>
+                </section>
+
+                <section class="carrusel row d-none d-lg-block my-3">
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="media/img1_car.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="media/img2_car.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="media/img3_car.webp" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="media/img4_car.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </section>
+
+                
+                <!-- ACTIVIDADES -->
+                <section class="block_actividades row rounded border border-danger my-5 d-flex justify-content-center">
+
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h3 class="display-4 text-info-emphasis p-3">Actividades</h3>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center">
+                            <form class="d-flex w-50" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Escribe una temática" aria-label="Search">
+                                <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 my-3">
+
+                        <article class="col-6 col-md-4 col-lg-3">
+
+                            <div class="actividad text-center">
+                                <div class="card text-bg-dark mb-2">
+                                    <img src="media/actividad1.webp" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                    <h5 class="card-title text-bottom">Cena Romántica en Restaurantes Locales</h5>                            
+                                    </div>
+                                </div>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Modal1">
+                                    Mas información
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="Modal1Label" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="Modal1Label">Cena Romántica en Restaurantes Locales</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Explora los mejores restaurantes de tu ciudad con menús especiales para San Valentín. Desde cenas íntimas a la luz de las velas hasta buffets con música en vivo, encuentra el lugar perfecto para compartir una noche especial o conocer nuevas personas en un ambiente relajado.
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </article>
+
+                        <article class="col-6 col-md-4 col-lg-3">
+
+                            <div class="actividad text-center">
+                                <div class="card text-bg-dark mb-2">
+                                    <img src="media/actividad2.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                    <h5 class="card-title text-bottom">Talleres de Cocina en Pareja o Grupales</h5>                            
+                                    </div>
+                                </div>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Modal2">
+                                    Mas información
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="Modal2Label" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="Modal2Label">Talleres de Cocina en Pareja o Grupales</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Aprende a cocinar deliciosos platos junto a tu pareja o en un grupo de personas solteras. Una actividad divertida e interactiva para romper el hielo, compartir risas y degustar juntos las creaciones culinarias.
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-6 col-md-4 col-lg-3">
+
+                            <div class="actividad text-center">
+                                <div class="card text-bg-dark mb-2">
+                                    <img src="media/actividad3.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                    <h5 class="card-title text-bottom">Rutas Románticas al Aire Libre</h5>                            
+                                    </div>
+                                </div>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Modal3">
+                                    Mas información
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="Modal3Label" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="Modal3Label">Rutas Románticas al Aire Libre</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Descubre rutas para pasear en pareja o unirte a grupos de senderismo para solteros. Disfruta de la naturaleza mientras conversas y creas conexiones especiales bajo el cielo de San Valentín.
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+
+
+                        <article class="col-6 col-md-4 col-lg-3">
+
+                            <div class="actividad text-center">
+                                <div class="card text-bg-dark mb-2">
+                                    <img src="media/actividad4.webp" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                    <h5 class="card-title text-bottom">Catas de Vino o Chocolate</h5>                            
+                                    </div>
+                                </div>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Modal4">
+                                    Mas información
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="Modal4Label" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="Modal4Label">Catas de Vino o Chocolate</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Únete a una cata exclusiva de vinos o chocolates artesanales. Ideal para parejas que desean un plan sofisticado o para grupos de solteros que quieran conocerse en un ambiente relajado y sabroso.
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-6 col-md-4 col-lg-3">
+
+                            <div class="actividad text-center">
+                                <div class="card text-bg-dark mb-2">
+                                    <img src="media/actividad5.jpg" class="card-img" alt="...">
+                                    <div class="card-img-overlay">
+                                    <h5 class="card-title text-bottom">Noches de Juegos y Trivia</h5>                            
+                                    </div>
+                                </div>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Modal5">
+                                    Mas información
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="Modal5Label" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="Modal5Label">Noches de Juegos y Trivia</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Participa en una noche divertida llena de juegos de mesa, trivia temática de San Valentín y competencias amistosas. Un espacio perfecto para conectar con otras personas mientras te diviertes.
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </section>
+
+            </main>
+
+            <aside class="col-12 col-lg-2 text-lg-center order-1 order-md-2">
+                <div class="bg-light p-2 rounded border border-danger">
+                    <h3 class="border-bottom border-danger text-danger pb-2">¿Quiénes somos?</h3>
+                    <p> 
+                        En nuestra empresa, nos especializamos en organizar citas únicas tanto para quienes buscan conocer gente nueva como para parejas que quieren reavivar la magia. Nuestra misión es crear experiencias auténticas, personalizadas y llenas de significado.
+                    </p>
+                    <p>
+                        Si estás buscando ampliar tu círculo social o encontrar a alguien especial, te ofrecemos encuentros diseñados para que disfrutes de una conexión genuina. Desde cenas relajadas hasta actividades temáticas, cada cita está pensada para que sea cómoda y emocionante.
+                    </p>
+                    <p>
+                        Para parejas, diseñamos planes que rompen la rutina y fortalecen su relación. Ya sea una cena romántica, una experiencia sorpresa o una actividad que siempre quisieron probar juntos, hacemos que cada momento sea especial. ¡Descubre lo fácil que es crear recuerdos inolvidables con nosotros!
+                    </p>
+                </div>
+            </aside>
+
+        </div>
+
+        <hr>
+
+        <div class="row opiniones py-4 g-3">
+            <div class="col-12 pb-3">
+                <h3 class="display-4 text-info-emphasis text-center text-lg-start">Opiniones de nuestros clientes</h3>
+            </div>
+            <article class="col-12 col-md-6 col-lg-4 order-lg-3">
+                <div class="opinion">
+                    <div class="card">
+                        <img src="media/opinion1.jpg" class="card-img-top" alt="Foto de Lucas Pérez">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Lucas Pérez</h5>
+                          <p class="card-text">Gracias a ellos pude conocer gente increíble. La experiencia fue muy divertida y las citas están muy bien organizadas. ¡Definitivamente lo recomendaré!</p>
+                        </div>
+                      </div>
+                </div>
+            </article>
+            
+            <article class="col-12 col-md-6 col-lg-4 order-lg-2">
+                <div class="opinion">
+                    <div class="card">
+                        <img src="media/opinion2.jpg" class="card-img-top" alt="Foto de María de Pablo">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">María de Pablo</h5>
+                          <p class="card-text">Fue la cita más romántica que hemos tenido en mucho tiempo. Los planes personalizados hicieron todo más especial. ¡Una experiencia única para parejas!</p>
+                        </div>
+                      </div>
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6 col-lg-4 order-lg-1">
+                <div class="opinion">
+                    <div class="card">
+                        <img src="media/opinion3.jpg" class="card-img-top" alt="Foto de María de Pablo">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger">Alejandro Muñoz</h5>
+                          <p class="card-text">No sabía por dónde empezar para conocer personas, pero aquí todo fue fácil y seguro. Ahora tengo nuevos amigos y más confianza en futuras citas.</p>
+                        </div>
+                      </div>
+                </div>
+            </article>
+
+        </div>
+        
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4 bg-dark text-light">
+        <p>&copy; 2025 Citas.com - Todos los derechos reservados</p>
+    </footer>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
